@@ -16,7 +16,7 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
   const { data: session, status } = useSession();
 
   return (
-    <aside className="text-gray-500 p-5 text-sm border-r border-gray-900">
+    <aside className="text-gray-500 p-5 text-sm border-r border-gray-900 overflow-y-scroll h-screen scrollbar-hide">
       <div className="space-y-4">
         <SidebarButton
           icon={<HomeIcon className="w-5 h-5" />}
@@ -46,6 +46,36 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
           label="Your episodes"
         />
         <hr className="border-t-[0.1px] border-gray-900" />
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
+        <p className="cursor-pointer hover:text-white">Playlist name</p>
         <p className="cursor-pointer hover:text-white">Playlist name</p>
       </div>
     </aside>

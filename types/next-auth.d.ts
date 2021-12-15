@@ -19,6 +19,9 @@ declare module "next-auth" {
       accessToken: null | string;
       refreshToken: null | string;
       username: null | string;
+      email: null | string;
+      name: null | string;
+      image: null | string;
     };
   }
 }

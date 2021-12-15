@@ -268,6 +268,13 @@
   dependencies:
     "@types/lodash" "*"
 
+"@types/lodash.shuffle@^4.2.6":
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/@types/lodash.shuffle/-/lodash.shuffle-4.2.6.tgz#191b0fc66699214558352123811d1657d9ed8930"
+  integrity sha512-ucI9VswlV9jOZiIh43Nd0tJ4Z8pfXy3PbQ9cB6Re1gPds8gLbOdmB0l3UkVI2crZjnQB95bhyNZVEDH8DgglYA==
+  dependencies:
+    "@types/lodash" "*"
+
 "@types/lodash@*":
   version "4.14.178"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.178.tgz#341f6d2247db528d4a13ddbb374bcdc80406f4f8"
@@ -2077,6 +2084,11 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
+lodash.shuffle@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.shuffle/-/lodash.shuffle-4.2.0.tgz#145b5053cf875f6f5c2a33f48b6e9948c6ec7b4b"
+  integrity sha1-FFtQU8+HX29cKjP0i26ZSMbse0s=
+
 lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
@@ -3159,6 +3171,11 @@ supports-color@^8.0.0:
   integrity sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==
   dependencies:
     has-flag "^4.0.0"
+
+tailwind-scrollbar-hide@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/tailwind-scrollbar-hide/-/tailwind-scrollbar-hide-1.1.6.tgz#9b9affcd5b0faba87148528891aa2168bc7c4dc5"
+  integrity sha512-WDF6t3YZbHpte7gwz6h4hwRl0unkC+exVz4ucAuDOtFwkOs8Pc77Bd6HBm//PMXVa6a6uQfDBsv8AiSa6GJq7A==
 
 tailwindcss@^3.0.2:
   version "3.0.2"
