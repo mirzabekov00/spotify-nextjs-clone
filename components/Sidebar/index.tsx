@@ -8,13 +8,21 @@ import {
   PlusCircleIcon,
 } from "@heroicons/react/outline";
 import SidebarButton from "./SidebarButton";
+import { signOut, useSession } from "next-auth/react";
 
 interface SidebarProps {}
 
 const Sidebar: React.FC<SidebarProps> = ({}) => {
+  const { data: session, status } = useSession();
+
   return (
     <aside className="text-gray-500 p-5 text-sm border-r border-gray-900">
       <div className="space-y-4">
+        <SidebarButton
+          icon={<HomeIcon className="w-5 h-5" />}
+          label="Log out"
+          onClick={() => signOut()}
+        />
         <SidebarButton icon={<HomeIcon className="w-5 h-5" />} label="Home" />
         <SidebarButton
           icon={<SearchIcon className="w-5 h-5" />}
