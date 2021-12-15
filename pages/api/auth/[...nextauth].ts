@@ -4,7 +4,7 @@ import spotifyApi, { LOGIN_URL } from "../../../lib/spotify";
 import get from "lodash.get";
 import { JWT } from "next-auth/jwt";
 
-const refreshAccessToken = async (token: JWT) => {
+const refreshAccessToken = async (token: JWT): Promise<JWT> => {
   try {
     spotifyApi.setAccessToken(token.accessToken || "");
     spotifyApi.setRefreshToken(token.refreshToken || "");
