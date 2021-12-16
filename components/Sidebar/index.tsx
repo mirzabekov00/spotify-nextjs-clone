@@ -10,6 +10,8 @@ import {
 import SidebarButton from "./SidebarButton";
 import { signOut, useSession } from "next-auth/react";
 import { useSpotify } from "../../hooks/useSpotify";
+import { useRecoilState } from "recoil";
+import { playlistIdState } from "../../atoms/playlist";
 
 interface SidebarProps {}
 
@@ -17,6 +19,7 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
   const [playlists, setPlaylists] = useState<
     SpotifyApi.PlaylistObjectSimplified[]
   >([]);
+  const [playlistId, setPlaylistId] = useRecoilState<string>(playlistIdState);
 
   const spotifyApi = useSpotify();
   const { data: session, status } = useSession();
@@ -60,9 +63,13 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
           label="Your episodes"
         />
         <hr className="border-t-[0.1px] border-gray-900" />
-        {playlists.map((playlist) => (
-          <p key={playlist.id} className="cursor-pointer hover:text-white">
-            {playlist.name}
+        {playlists.map(({ id, name }) => (
+          <p
+            onClick={() => setPlaylistId(id)}
+            key={id}
+            className="cursor-pointer hover:text-white"
+          >
+            {name}
           </p>
         ))}
       </div>
