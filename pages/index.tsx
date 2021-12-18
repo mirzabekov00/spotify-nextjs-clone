@@ -3,6 +3,7 @@ import { Session } from "next-auth";
 import { getSession } from "next-auth/react";
 import Head from "next/head";
 import Content from "../components/Content";
+import Player from "../components/Player";
 import Sidebar from "../components/Sidebar";
 
 interface HomeProps {
@@ -22,6 +23,10 @@ const Home: NextPage<HomeProps> = () => {
           <Sidebar />
           <Content />
         </main>
+
+        <div className="sticky bottom-0">
+          <Player />
+        </div>
       </div>
     </>
   );
