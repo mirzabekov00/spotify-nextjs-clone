@@ -5,7 +5,7 @@ import shuffle from "lodash.shuffle";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { playlistIdState, playlistState } from "../../atoms/playlist";
 import { useSpotify } from "../../hooks/useSpotify";
-import get from "lodash.get";
+import Songs from "../Songs";
 
 interface ContentProps {}
 
@@ -37,11 +37,9 @@ const Content: React.FC<ContentProps> = ({}) => {
   }, [playlistId]);
 
   useEffect(() => {
-    if (session?.user.accessToken) {
-      spotifyApi.getPlaylist(playlistId).then((data) => {
-        setPlaylist(data.body);
-      });
-    }
+    spotifyApi.getPlaylist(playlistId).then((data) => {
+      setPlaylist(data.body);
+    });
   }, [session, spotifyApi, playlistId]);
 
   const playlistImage = playlist?.images[0].url;
@@ -50,7 +48,7 @@ const Content: React.FC<ContentProps> = ({}) => {
     <div className="flex-grow">
       {session?.user && (
         <header className="absolute top-5 right-8">
-          <div className="flex items-center bg-red-300 black space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2 ">
+          <div className="flex items-center bg-black text-white space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2">
             <img
               src={imageSrc}
               alt={username}
@@ -75,6 +73,10 @@ const Content: React.FC<ContentProps> = ({}) => {
           </h1>
         </div>
       </section>
+
+      <div>
+        <Songs />
+      </div>
     </div>
   );
 };
