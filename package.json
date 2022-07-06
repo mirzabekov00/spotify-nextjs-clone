@@ -32,7 +32,7 @@
     "eslint": "8.4.1",
     "eslint-config-next": "12.0.7",
     "lodash.get": "^4.4.2",
-    "next-auth": "^4.3.2",
+    "next-auth": "^4.9.0",
     "postcss": "^8.4.5",
     "spotify-web-api-node": "^5.0.2",
     "tailwindcss": "^3.0.2",
